@@ -31,6 +31,13 @@ float:left;
 	height: 89%;
 }
 </style>
+
+<div id="gr_updates_widget">
+  <iframe allow-scripts id="the_iframe" src="https://www.goodreads.com/widgets/user_update_widget?num_updates=3&user=161785741&width=null" frameborder="0"></iframe>
+	<div id="gr_footer">
+	  <a href="https://www.goodreads.com/"><img alt="Goodreads: Book reviews, recommendations, and discussion" rel="nofollow" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" /></a>
+	</div>
+</div>
 <script>
 	const queryString = window.location.search;
 	var urlParams = new URLSearchParams(queryString);
@@ -39,9 +46,3 @@ float:left;
 	var url = `https://www.goodreads.com/widgets/user_update_widget?num_updates=${updates}&user=${user}&width=null`;
 	top.document.getElementById('the_iframe').setAttribute("src",url);
 </script>
-<div id="gr_updates_widget">
-  <iframe allow-scripts id="the_iframe" src="https://www.goodreads.com/widgets/user_update_widget?num_updates=3&user=161785741&width=null" frameborder="0"></iframe>
-	<div id="gr_footer">
-	  <a href="https://www.goodreads.com/"><img alt="Goodreads: Book reviews, recommendations, and discussion" rel="nofollow" src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png" /></a>
-	</div>
-</div>
