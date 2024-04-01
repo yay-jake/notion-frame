@@ -35,7 +35,7 @@ float:left;
 	const queryString = window.location.search;
 	const urlParams = new URLSearchParams(queryString);
 	const user = urlParams.get('user');
-	const updates = urlParams.get('user') || 3;
+	const updates = urlParams.get('updates') || 3;
 	const url = `https://www.goodreads.com/widgets/user_update_widget?num_updates=${updates}&user=${user}&width=null`;
 	top.document.getElementById('the_iframe').setAttribute("src",url);
 </script>
